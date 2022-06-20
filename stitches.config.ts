@@ -194,30 +194,25 @@ export const { styled, createTheme, css, keyframes, getCssText, globalCss } =
   });
 
 export const globalStyles = globalCss({
+  '*': { margin: 0, padding: 0, boxSizing: 'border-box' },
+
   body: {
     margin: 0,
-    backgroundColor: '$loContrast',
-    color: '$hiContrast',
+    backgroundColor: '$hiContrast',
+    color: '$loContrast',
+    padding: '0',
   },
 
   'body, button': {
-    fontFamily: '$sans',
+    fontFamily: "'Roboto', sans-serif",
+    overflowX: 'hidden',
   },
-
-  svg: { display: 'block' },
-
-  pre: { margin: 0 },
-
-  '::selection': {
-    backgroundColor: '$violet300',
+  'h1, h2': {
+    fontFamily: "'Poppins', sans-serif",
   },
-
-  '@font-face': {
-    fontFamily: 'Whyte Inktrap',
-    src: 'url("/fonts/whyte/inktrap-heavy.woff2") format("woff2"), url("/fonts/whyte/inktrap-heavy.woff") format("woff")',
-    fontWeight: 900,
-    fontStyle: 'normal',
-    fontDisplay: 'block',
+  a: {
+    textDecoration: 'none',
+    color: 'inherit',
   },
 });
 
