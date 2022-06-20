@@ -1,8 +1,13 @@
+import { BrowserRouter as Router } from 'react-router-dom';
 import { globalStyles } from '../stitches.config';
-import { SignUp } from './pages/001-SignUp';
+import MainRoutes from './routes';
 
 export function App() {
   globalStyles();
 
-  return <SignUp />;
+  return (
+    <Router>
+      <MainRoutes />
+    </Router>
+  );
 }
