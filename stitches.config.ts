@@ -115,73 +115,73 @@ const media = {
 
 const utils = {
   // Abbreviated margin properties
-  m: (value: any) => ({
+  m: (value: Stitches.ScaleValue<'space'>) => ({
     marginTop: value,
     marginBottom: value,
     marginLeft: value,
     marginRight: value,
   }),
 
-  mt: (value: any) => ({
+  mt: (value: Stitches.ScaleValue<'space'>) => ({
     marginTop: value,
   }),
-  mr: (value: any) => ({
+  mr: (value: Stitches.ScaleValue<'space'>) => ({
     marginRight: value,
   }),
-  mb: (value: any) => ({
+  mb: (value: Stitches.ScaleValue<'space'>) => ({
     marginBottom: value,
   }),
-  ml: (value: any) => ({
+  ml: (value: Stitches.ScaleValue<'space'>) => ({
     marginLeft: value,
   }),
-  mx: (value: any) => ({
+  mx: (value: Stitches.ScaleValue<'space'>) => ({
     marginLeft: value,
     marginRight: value,
   }),
-  my: (value: any) => ({
+  my: (value: Stitches.ScaleValue<'space'>) => ({
     marginTop: value,
     marginBottom: value,
   }),
-  p: (value: any) => ({
+  p: (value: Stitches.ScaleValue<'space'>) => ({
     paddingTop: value,
     paddingBottom: value,
     paddingLeft: value,
     paddingRight: value,
   }),
-  pt: (value: any) => ({
+  pt: (value: Stitches.ScaleValue<'space'>) => ({
     paddingTop: value,
   }),
-  pr: (value: any) => ({
+  pr: (value: Stitches.ScaleValue<'space'>) => ({
     paddingRight: value,
   }),
-  pb: (value: any) => ({
+  pb: (value: Stitches.ScaleValue<'space'>) => ({
     paddingBottom: value,
   }),
-  pl: (value: any) => ({
+  pl: (value: Stitches.ScaleValue<'space'>) => ({
     paddingLeft: value,
   }),
-  px: (value: any) => ({
+  px: (value: Stitches.ScaleValue<'space'>) => ({
     paddingLeft: value,
     paddingRight: value,
   }),
-  py: (value: any) => ({
+  py: (value: Stitches.ScaleValue<'space'>) => ({
     paddingTop: value,
     paddingBottom: value,
   }),
 
   // A property for applying width/height together
-  size: (value: any) => ({
+  size: (value: Stitches.ScaleValue<'space'>) => ({
     width: value,
     height: value,
   }),
 
   // A property to apply linear gradient
-  linearGradient: (value: any) => ({
+  linearGradient: (value: Stitches.ScaleValue<'space'>) => ({
     backgroundImage: `linear-gradient(${value})`,
   }),
 
   // An abbreviated property for border-radius
-  br: (value: any) => ({
+  br: (value: Stitches.ScaleValue<'space'>) => ({
     borderRadius: value,
   }),
 };
