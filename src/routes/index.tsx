@@ -1,5 +1,5 @@
 import { Routes, Route } from 'react-router-dom';
-import { SignUp } from '../pages/challenges/001-SignUp';
+import { SignUp } from '../pages/Challenges/001-sign-up';
 import { Home } from '../pages/Home';
 
 export default function MainRoutes() {
