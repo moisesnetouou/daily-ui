@@ -1,15 +1,8 @@
-import {
-  SignUpContainer,
-  ApresentationContainer,
-  ApresentationContent,
-  FormContainer,
-} from './styles';
-
 export function SignUp() {
   return (
-    <SignUpContainer>
-      <ApresentationContainer>
-        <ApresentationContent>
+    <main>
+      <div>
+        <div>
           <div className="apresentation-header">
             <h1>Delta Deep Sea</h1>
 
@@ -24,10 +17,10 @@ export function SignUp() {
             <span>Already have an account?</span>
             <a href="/#">Sign In</a>
           </div>
-        </ApresentationContent>
-      </ApresentationContainer>
+        </div>
+      </div>
 
-      <FormContainer>1</FormContainer>
-    </SignUpContainer>
+      <div>1</div>
+    </main>
   );
 }
