@@ -25,7 +25,33 @@ export function SignUp() {
         </div>
       </div>
 
-      <div className="flex w-1/2">1</div>
+      <div className="flex w-1/2">
+        <div className="flex flex-col justify-between h-4/5 m-auto rounded-2xl">
+          <div className="text-gray-900">
+            <h1>Welcome to Delta Deep Sea</h1>
+
+            <h2>Create your account</h2>
+          </div>
+
+          <form>
+            <input
+              placeholder="Enter your email"
+              className="border border-gray-800 w-full"
+            />
+            <input placeholder="Your password" className="w-full" />
+            <div>
+              <input type="checkbox" /> <span>Show Password?</span>
+            </div>
+
+            <button type="submit">Sign Up</button>
+          </form>
+
+          <div className="flex flex-col">
+            <span>Already have an account?</span>
+            <a href="/#">Sign In</a>
+          </div>
+        </div>
+      </div>
     </main>
   );
 }
