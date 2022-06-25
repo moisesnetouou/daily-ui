@@ -1,6 +1,14 @@
+/* eslint-disable jsx-a11y/label-has-associated-control */
+import { useState } from 'react';
 import medusaImg from '../../../assets/images/medusa.jpg';
 
 export function SignUp() {
+  const [isShowPassword, setIsShowPassword] = useState(false);
+
+  function handleChangeVisibilityPassword() {
+    setIsShowPassword(!isShowPassword);
+  }
+
   return (
     <main className="flex h-screen">
       <div
@@ -26,24 +34,41 @@ export function SignUp() {
       </div>
 
       <div className="flex w-1/2">
-        <div className="flex flex-col justify-between h-4/5 m-auto rounded-2xl">
+        <div className="flex flex-col justify-between h-4/5 w-3/5 m-auto rounded-2xl">
           <div className="text-gray-900">
-            <h1>Welcome to Delta Deep Sea</h1>
+            <h1 className="text-2xl font-bold">Welcome to Delta Deep Sea</h1>
 
-            <h2>Create your account</h2>
+            <h2 className="text-lg">Create your account</h2>
           </div>
 
-          <form>
+          <form className="flex flex-col">
+            <label htmlFor="email">Email address</label>
             <input
+              id="email"
               placeholder="Enter your email"
-              className="border border-gray-800 w-full"
+              className="border border-gray-400 mt-5"
             />
-            <input placeholder="Your password" className="w-full" />
+            <label htmlFor="password" className="mt-8">
+              Set password
+            </label>
+            <input
+              id="password"
+              type={!isShowPassword ? 'password' : 'text'}
+              placeholder="Your password"
+              className="border border-gray-400 mt-5"
+            />
             <div>
-              <input type="checkbox" /> <span>Show Password?</span>
+              <input
+                type="checkbox"
+                className="mt-4"
+                onClick={handleChangeVisibilityPassword}
+              />{' '}
+              <span>Show Password?</span>
             </div>
 
-            <button type="submit">Sign Up</button>
+            <button type="submit" className="bg-cyan-900 mt-10 p-2 rounded-lg">
+              Sign Up
+            </button>
           </form>
 
           <div className="flex flex-col">
